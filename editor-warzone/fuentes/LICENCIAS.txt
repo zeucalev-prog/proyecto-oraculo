@@ -1,0 +1,2 @@
+Anton, Bebas Neue y Montserrat: SIL Open Font License 1.1 (Google Fonts).
+Mono-Bold.ttf: DejaVu Sans Mono Bold (licencia libre de DejaVu / Bitstream Vera).

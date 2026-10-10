@@ -1,0 +1,49 @@
+titulo: ¿Qué pasaría si Warzone fuera real? Lo que cuesta UNA partida
+moneda: $
+subtitulos: si
+
+# FORMATO: "¿Qué pasaría si…?" + la cuenta. Hipótesis absurda, costos reales.
+# DURACIÓN: 55–65 s · TONO: épico-cómico
+# REGLA DE PLATAFORMA: NO pongas precios de armas reales (TikTok e Instagram limitan el contenido de armas).
+#   Solo equipo, transporte y servicios. Las armas se mencionan como chiste, sin precio.
+# DATOS: todos son estimados en USD. Verifica en tu país y dilo como "más o menos":
+#   - renta de helicóptero por hora ~ $1,500 · salto en paracaídas tándem ~ $250
+#   - chaleco + 3 placas de protección ~ $600 · drone con cámara térmica de consumo ~ $1,000
+#   - máscara de gas + filtros ~ $150 · ambulancia aérea (EE. UU.) ~ $40,000
+# IMÁGENES (mismo ESTILO BASE del guion 01):
+#   helicoptero.png → "the soldier inside a helicopter with the door open, sunset over a city"
+#   salto.png       → "the soldier skydiving with an orange parachute over a big city map"
+#   placas.png      → "the soldier proudly showing a vest with three glowing armor plates"
+#   drone.png       → "a small drone with a radar screen projecting red dots"
+#   gas.png         → "the soldier with a gas mask, orange toxic wall of fog behind him"
+#   rescate.png     → "a medical helicopter lifting the soldier on a stretcher, dramatic"
+
+[cara zoom]
+¿Qué pasaría si Warzone fuera real? ¿Cuánto te costaría jugar una sola partida?
+
+[cara]
+Hice las cuentas {titulo "UNA PARTIDA *REAL*"} desde que despegas hasta que te eliminan.
+
+[mitad img=helicoptero.png]
+Primero, la infiltración. Rentar un helicóptero una hora {precio "HELICÓPTERO 1 HORA" 1500 fase="LA INFIL"} y saltar en paracaídas {precio "SALTO EN PARACAÍDAS" 250 fase="LA INFIL"} porque obviamente no sabes saltar solo.
+
+[mitad img=placas.png]
+Aterrizas y lo primero que buscas son placas {precio "CHALECO + 3 PLACAS" 600 fase="EL EQUIPO"} y las tres placas no son opcionales, compa.
+
+[cubrir img=drone.png]
+Luego quieres ver a los enemigos. Tu UAV en la vida real es un drone térmico {ping "ENEMIGO" y=700} {precio "DRONE TÉRMICO" 1000 fase="EL EQUIPO"} y sí, también se le acaba la batería.
+
+[mitad img=gas.png]
+Ahora cierra el gas {barra "ZONA SEGURA" 20} {precio "MÁSCARA DE GAS" 150 fase="EL GAS"} y tú todavía estás saqueando cajas.
+
+[cara]
+Y aquí es donde todo sale mal {hit} te tiran {flash} y te llevan en ambulancia aérea.
+
+[cubrir img=rescate.png]
+{precio "AMBULANCIA AÉREA" 40000 fase="EL RESCATE"} La revivida más cara de tu vida.
+
+[cara zoom]
+{total} Una sola partida real te cuesta más de cuarenta y tres mil dólares.
+
+[cara]
+Y en el juego te revive tu compa gratis… si no se fue a saquear. Etiqueta a ese compa.

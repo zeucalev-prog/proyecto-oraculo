@@ -1,0 +1,37 @@
+titulo: ¿Cuántas horas de tu vida le has dado a Warzone?
+subtitulos: si
+
+# FORMATO: "La calculadora incómoda". Sin precios: contadores y barras. Genera MUCHOS comentarios
+#   ("yo llevo 3,000 horas") → algoritmo.
+# DURACIÓN: 45–55 s · TONO: cómplice, se ríe de sí mismo
+# DATOS:
+#   - partida promedio ≈ 25 min (estimado de wzranked citado por expertbeacon/gfinityesports; varía por modo)
+#   - 5 partidas al día ≈ 2 horas → 730 h al año ≈ 30 días completos
+#   - el FSI estima 600–750 horas de clase para un angloparlante que aprende español (idioma de categoría I);
+#     dilo como "lo que tarda un gringo en aprender español"
+#   - 730 h a $5 la hora = $3,650 (cálculo propio, dilo como ejemplo)
+# IMÁGENES (ESTILO BASE):
+#   reloj.png  → "the soldier tied to a giant clock, hands spinning fast"
+#   idioma.png → "the soldier in a classroom with a 'HOLA' chalkboard, graduation cap"
+#   trabajo.png→ "the soldier working at a fast food counter, piles of cash"
+
+[cara zoom]
+¿Cuántas horas de tu vida le has regalado a Warzone? Te va a doler.
+
+[cara]
+Una partida dura más o menos veinticinco minutos {contador "MINUTOS POR PARTIDA" 25} y tú no juegas una.
+
+[mitad img=reloj.png]
+Juegas cinco al día {contador "HORAS AL DÍA" 2} eso son dos horas, que al año {contador "HORAS AL AÑO" 730 suf=" H"} son setecientas treinta horas.
+
+[cubrir img=reloj.png]
+O sea, {texto "30 DÍAS SIN DORMIR"} un mes entero de tu vida, sin dormir, saltando de un helicóptero.
+
+[mitad img=idioma.png]
+Con esas horas, un gringo aprende español {barra "ESPAÑOL APRENDIDO" 100} y tú todavía no aprendes a no asomarte.
+
+[mitad img=trabajo.png]
+Y si te pagaran cinco dólares la hora {contador "SI TE PAGARAN" 3650 pre="$"} tendrías tres mil seiscientos cincuenta dólares.
+
+[cara]
+Pero bueno {sello "SIN ARREPENTIMIENTOS"} ¿cuántas horas llevas tú? Ponlo en los comentarios y vemos quién gana.

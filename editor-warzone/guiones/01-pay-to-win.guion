@@ -1,0 +1,58 @@
+titulo: ¿Cuánto cuesta ser el más pay to win de Warzone?
+moneda: $
+subtitulos: si
+
+# FORMATO: "La cuenta del operador" · 5 círculos de gas = 5 fases de gasto → zona final = TOTAL
+# DURACIÓN objetivo: 55–65 s · TONO: incrédulo, divertido, ritmo rápido
+# DATOS (verifica precios de tu país antes de grabar; todo en USD aprox.):
+#   - Pase base 1,100 COD Points ≈ $9.99; BlackCell ≈ $30 por temporada (gamingtrend.com, temporada 1 de BO7)
+#   - Bundle de operador típico 2,400 CP ≈ $19.99 (sportskeeda.com)
+#   - 2021: alguien sumó TODOS los bundles de Warzone = 788,700 COD Points (mein-mmo.de)
+#   - Setup, energéticas y coach: estimados redondos (dilo como "más o menos")
+#
+# IMÁGENES (genéralas con tu IA de imágenes; estilo fijo para que TU canal se reconozca):
+#   ESTILO BASE → "3D claymation diorama, plasticine miniature soldier mascot with an oversized round helmet and
+#   glowing orange visor, chunky cute proportions, dark olive and signal-orange palette, cinematic rim light,
+#   shallow depth of field, vertical 9:16, no text, no logos"
+#   pase.png       → ESTILO BASE + "the soldier unrolling an endless golden reward scroll"
+#   bundles.png    → ESTILO BASE + "the soldier buried under a mountain of glowing shopping boxes"
+#   setup.png      → ESTILO BASE + "the soldier on a gaming throne with three monitors and RGB lights"
+#   energeticas.png→ ESTILO BASE + "the soldier surrounded by towers of energy drink cans, jittery"
+#   coach.png      → ESTILO BASE + "the soldier at a chalkboard with a strict drill-sergeant coach"
+#   gulag.png      → ESTILO BASE + "the soldier alone in a gritty shower-room arena, spotlight, defeated"
+
+[cara zoom]
+¿Cuánto dinero real necesitas para ser el jugador más pay to win de Warzone?
+
+[cara]
+Porque en 2021 alguien sumó todas las skins que existían {contador "COD POINTS" 788700} y eran setecientos ochenta y ocho mil COD Points.
+
+[cara]
+Así que hice las cuentas {titulo "LA CUENTA DEL *OPERADOR*"} círculo por círculo.
+
+[mitad img=pase.png]
+Círculo uno, el pase {precio "PASE DE BATALLA" 9.99 fase="EL PASE"} son diez dólares, pero tú no quieres el normal, quieres el BlackCell {precio "BLACKCELL × 6 TEMPORADAS" 180 fase="EL PASE"} todas las temporadas del año.
+
+[mitad img=bundles.png]
+Círculo dos, las skins. Un bundle cuesta veinte dólares {texto "2 BUNDLES POR SEMANA"} y tú compras dos por semana {precio "104 BUNDLES AL AÑO" 2080 fase="LAS SKINS"} eso es más que el pase de todo el año multiplicado por diez.
+
+[cubrir img=setup.png]
+Círculo tres, el setup. Una PC gamer {precio "PC GAMER" 2000 fase="EL SETUP"} un monitor de doscientos cuarenta hertz {precio "MONITOR 240 HZ" 300 fase="EL SETUP"} audífonos {precio "AUDÍFONOS" 150 fase="EL SETUP"} y un control pro {precio "CONTROL PRO" 200 fase="EL SETUP"} porque el problema nunca eres tú, es el control.
+
+[mitad img=energeticas.png]
+Círculo cuatro, el combustible. Una lata de bebida energética diaria {precio "1 ENERGÉTICA AL DÍA × 365" 912.50 fase="EL COMBUSTIBLE"} durante un año.
+
+[ventana img=coach.png]
+Círculo cinco, el ego. Un coach de Warzone una hora a la semana {precio "COACH × 52 SEMANAS" 2080 fase="EL EGO"} para que te diga lo que ya sabes.
+
+[cara]
+{cuenta} Sumas todo lo que llevamos y aquí viene lo bueno.
+
+[cara zoom]
+{total} La zona final te sale en casi ocho mil dólares al año. Ocho mil.
+
+[cubrir img=gulag.png]
+Y aun así {kill "SWEAT_99" "TÚ"} pierdes el Gulag contra un tipo con la skin por defecto {sello "PAY TO LOSE"}
+
+[cara]
+¿Tú en qué círculo te quedaste? Te leo en los comentarios.

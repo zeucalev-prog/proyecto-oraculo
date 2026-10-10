@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*-editado.mp4
+*-editado-hoja.jpg
+*-editado-plan.txt
+*.palabras.json
+demo/salida/
