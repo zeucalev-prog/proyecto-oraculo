@@ -107,7 +107,8 @@ def main():
         return
 
     # 3) audio: voz + efectos + música
-    print(f'▶ Video {w}×{h} @ {fps_src:.2f} fps → salida 1080×1920 @ {fps} fps · {proy.dur:.1f}s')
+    hdr = ' (HDR → convertido a SDR)' if tiempos.es_hdr(a.video) else ''
+    print(f'▶ Video {w}×{h} @ {fps_src:.2f} fps{hdr} → salida 1080×1920 @ {fps} fps · {proy.dur:.1f}s')
     tmp = tempfile.mkdtemp(prefix='oraculo-')
     wav = os.path.join(tmp, 'mezcla.wav')
     sonidos.mezclar(a.video, proy.sfx, wav, proy.dur, musica, a.vol_musica, a.vol_sfx, os.path.join(carpeta, 'sfx'))

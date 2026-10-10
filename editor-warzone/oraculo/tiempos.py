@@ -136,3 +136,16 @@ def info_video(video):
     st = json.loads(r.stdout)['streams'][0]
     num, den = st['r_frame_rate'].split('/')
     return st['width'], st['height'], float(num) / float(den)
+
+
+def es_hdr(video):
+    """True si el video es HDR (iPhone graba HLG/Dolby Vision por defecto)."""
+    r = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=color_transfer',
+                        '-of', 'csv=p=0', video], capture_output=True, text=True)
+    return r.stdout.strip() in ('arib-std-b67', 'smpte2084')
+
+
+def filtro_sdr():
+    """Filtro ffmpeg HDR→SDR (bt709). Requiere zscale (incluido en los builds normales de ffmpeg)."""
+    return ('zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=hable:desat=0,'
+            'zscale=t=bt709:m=bt709:r=tv,format=yuv420p,')

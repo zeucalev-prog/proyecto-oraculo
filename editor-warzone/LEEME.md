@@ -42,6 +42,7 @@ python editar.py demo/salida/presentador-prueba.mp4 demo/salida/01-pay-to-win.gu
 ## Estructura
 ```
 editar.py            ← el comando
+transcribir.py       ← transcribe una toma improvisada (para escribir su guion)
 oraculo/guion.py     ← lee las marcas [diseño] y {elemento}
 oraculo/tiempos.py   ← Whisper / SRT / pausas + alineación guion↔voz
 oraculo/graficos.py  ← tarjetas, informe, total, killfeed, subtítulos… (estilo HUD táctico)
@@ -50,3 +51,6 @@ oraculo/render.py    ← línea de tiempo y composición cuadro a cuadro
 fuentes/             ← Anton, Bebas Neue, Montserrat (OFL) y DejaVu Mono
 guiones/             ← formato + 3 guiones listos para grabar
 ```
+
+## Usarlo con Claude en tu PC
+Este repo trae la skill `.claude/skills/editor-warzone`. Abre Claude Code (Claude Desktop o `claude` en una terminal) **dentro de la carpeta del repo** y pídele: *"Edita mi video IMG_8139.MOV con el editor de Warzone"*. Claude buscará el video en tu PC, instalará lo que falte, escribirá o elegirá el guion y te entregará el MP4.

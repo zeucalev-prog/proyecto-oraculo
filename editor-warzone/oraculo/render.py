@@ -200,12 +200,14 @@ class LectorVideo:
     """Lee cuadros RGB ya encuadrados a w×h desde ffmpeg (con bucle opcional)."""
 
     def __init__(self, ruta, w, h, fps, desde=0.0, bucle=False):
+        from .tiempos import es_hdr, filtro_sdr
         self.ruta, self.w, self.h, self.fps, self.desde, self.bucle = ruta, w, h, fps, desde, bucle
+        self.pre = filtro_sdr() if es_hdr(ruta) else ''  # video HDR del iPhone → colores normales
         self.ultimo = np.zeros((h, w, 3), np.uint8)
         self._abrir()
 
     def _abrir(self):
-        vf = f'scale={self.w}:{self.h}:force_original_aspect_ratio=increase,crop={self.w}:{self.h},setsar=1,fps={self.fps}'
+        vf = self.pre + f'scale={self.w}:{self.h}:force_original_aspect_ratio=increase,crop={self.w}:{self.h},setsar=1,fps={self.fps}'
         self.p = subprocess.Popen(['ffmpeg', '-v', 'error', '-ss', str(self.desde), '-i', self.ruta, '-vf', vf, '-an',
                                    '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], stdout=subprocess.PIPE)
 

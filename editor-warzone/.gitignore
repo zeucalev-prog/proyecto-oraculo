@@ -5,3 +5,6 @@ __pycache__/
 *-editado-plan.txt
 *.palabras.json
 demo/salida/
+proyectos/
+*.MOV
+*.mov
